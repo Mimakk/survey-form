@@ -12,17 +12,19 @@
 
     <body>
         <div class="container">
-            <h1 id="title" class="text-center">Survey Form For Pet Owners</h1>
-            <p id="description" class="description text-center">Please fill out the form.</p>
+
+            <header class="header">
+                <h1 id="title" class="text-center">Survey Form For Pet Owners</h1>
+                <p id="description" class="description text-center">Please fill out the form.</p>
+            </header>
 
             <form id="survey-form">
 
-                <fieldset>
-                    <label for="name" id="name-label">
-                        Your Name: 
-                        <input id="name" name="name" type="text" placeholder="Enter your name" required />
-                    </label>
-                </fieldset>
+
+                <div class="form-group">
+                    <label for="name" id="name-label">Your Name:</label>
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required /> 
+                </div>
 
                 <fieldset>
                     <label for="email" id="email-label">
