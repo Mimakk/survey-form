@@ -11,90 +11,91 @@
     </head>
 
     <body>
+        <div class="container">
+            <h1 id="title" class="text-center">Survey Form For Pet Owners</h1>
+            <p id="description" class="description text-center">Please fill out the form.</p>
 
-        <h1 id="title">Registration Form For Pet Owners</h1>
-        <p id="description">Please fill out the form.</p>
+            <form id="survey-form">
 
-        <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">
+                        Your Name: 
+                        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                    </label>
+                </fieldset>
 
-            <fieldset>
-                <label for="name" id="name-label">
-                    Your Name: 
-                    <input id="name" name="name" type="text" placeholder="Enter your name" required />
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="email" id="email-label">
+                        Email: 
+                        <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
+                    </label>
+                </fieldset>
 
-            <fieldset>
-                <label for="email" id="email-label">
-                    Email: 
-                    <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <label for="name" id="name-label">
-                    Your Pet Name: 
-                    <input id="pet-name" name="pet-name" type="text" placeholder="Enter your pet name" required />
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="name" id="name-label">
+                        Your Pet Name: 
+                        <input id="pet-name" name="pet-name" type="text" placeholder="Enter your pet name" required />
+                    </label>
+                </fieldset>
 
 
-            <fieldset>
-                <label for="age" id="number-label">
-                    Your Age (optional):
-                    <input id="number" name="age" type="number" min="10" max="150" placeholder="Age" />
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="age" id="number-label">
+                        Your Age (optional):
+                        <input id="number" name="age" type="number" min="10" max="150" placeholder="Age" />
+                    </label>
+                </fieldset>
 
-            <fieldset>
-                <label for="age" id="number-label">
-                    Your Pets Age:
-                    <input id="number" name="pet-age" type="number" min="0" max="30" placeholder="Age" required/>
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="age" id="number-label">
+                        Your Pets Age:
+                        <input id="number" name="pet-age" type="number" min="0" max="30" placeholder="Age" required/>
+                    </label>
+                </fieldset>
 
-            <fieldset>
-                <label for="dropdown">
-                    Are you a cat person or a dog person? <br />
-                    <select id="dropdown" name="cat-or-dog" >
-                        <option value="" >Select an option</option>
-                        <option value="1" >Cat Person</option>
-                        <option value="2" >Dog Person</option>
-                        <option value="3" >Other</option>
-                    </select>
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="dropdown">
+                        Are you a cat person or a dog person? <br />
+                        <select id="dropdown" name="cat-or-dog" >
+                            <option value="" >Select an option</option>
+                            <option value="1" >Cat Person</option>
+                            <option value="2" >Dog Person</option>
+                            <option value="3" >Other</option>
+                        </select>
+                    </label>
+                </fieldset>
 
-            <fieldset>
-                Would you recommend us to a friend? <br />
-                <label for="recomended" >
-                    <input id="recomended" type="radio" name="recommendation" class="inline" value="Yes" /> Yes <br />
-                </label>
-                <label for="notrecomended" >
-                    <input id="notrecomended" type="radio" name="recommendation" class="inline" value="No" /> No
-                </label>
-            </fieldset>
+                <fieldset>
+                    Would you recommend us to a friend? <br />
+                    <label for="recomended" >
+                        <input id="recomended" type="radio" name="recommendation" class="inline" value="Yes" /> Yes <br />
+                    </label>
+                    <label for="notrecomended" >
+                        <input id="notrecomended" type="radio" name="recommendation" class="inline" value="No" /> No
+                    </label>
+                </fieldset>
 
-            <fieldset>
+                <fieldset>
+                    
+                    <p id="question">What is the personality of your pet?</p> <br >
+                    <input id="pet-personality" type="checkbox" name="funny" class="inline" value="Funny" />Funny <br />
+                    <input id="pet-personality" type="checkbox" name="crazy" class="inline" value="Crazy" />Crazy <br />
+                    <input id="pet-personality" type="checkbox" name="lovely" class="inline" value="Lovely" />Lovely <br />
+                    <input id="pet-personality" type="checkbox" name="devil" class="inline" value="Devil" />Devil <br />
+                    <input id="pet-personality" type="checkbox" name="cute" class="inline" value="Cute" />Cute <br />
+                    <input id="pet-personality" type="checkbox" name="chill" class="inline" value="Chill" />Chill <br />
+                    <input id="pet-personality" type="checkbox" name="agressive" class="inline" value="Agressive" />Agressive
+                </fieldset>
                 
-                <input id="pet-personality" type="checkbox" name="funny" class="inline" value="Funny" />Funny <br />
-                <input id="pet-personality" type="checkbox" name="crazy" class="inline" value="Crazy" />Crazy <br />
-                <input id="pet-personality" type="checkbox" name="lovely" class="inline" value="Lovely" />Lovely <br />
-                <input id="pet-personality" type="checkbox" name="devil" class="inline" value="Devil" />Devil <br />
-                <input id="pet-personality" type="checkbox" name="cute" class="inline" value="Cute" />Cute <br />
-                <input id="pet-personality" type="checkbox" name="chill" class="inline" value="Chill" />Chill <br />
-                <input id="pet-personality" type="checkbox" name="agressive" class="inline" value="Agressive" />Agressive
-            </fieldset>
-            
-            <fieldset>
-                <label for="comment">
-                    Please comment us: <br />
-                    <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Comment here!" ></textarea>
-                </label>
-            </fieldset>
+                <fieldset>
+                    <label for="comment">
+                        Please comment us: <br />
+                        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Comment here!" ></textarea>
+                    </label>
+                </fieldset>
 
-            <input id="submit" type="submit" value="Submit" />
-        </form>
-
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+        </div>
     </body>
 </html>
