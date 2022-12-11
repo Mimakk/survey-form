@@ -26,75 +26,90 @@
                     <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required /> 
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="email" id="email-label">Email:</label>
                     <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" required/>
                 </div>
 
-                <fieldset>
-                    <label for="name" id="name-label">
-                        Your Pet Name: 
-                        <input id="pet-name" name="pet-name" type="text" placeholder="Enter your pet name" required />
-                    </label>
-                </fieldset>
+                <div class="form-group">
+                    <label for="name" id="name-label">Your Pet Name:</label>
+                    <input id="pet-name" name="pet-name" type="text" class="form-control" placeholder="Enter your pet name" required />
+                </div>
 
 
-                <fieldset>
-                    <label for="age" id="number-label">
-                        Your Age (optional):
-                        <input id="number" name="age" type="number" min="10" max="150" placeholder="Age" />
-                    </label>
-                </fieldset>
+                <div class="form-group">
+                    <label for="number" id="number-label">Your Age <span class="clue">(optional)</span>:</label>
+                    <input id="number" name="age" type="number" min="10" max="150" class="form-control" placeholder="Age" />
+                </div>
 
-                <fieldset>
-                    <label for="age" id="number-label">
-                        Your Pets Age:
-                        <input id="number" name="pet-age" type="number" min="0" max="30" placeholder="Age" required/>
-                    </label>
-                </fieldset>
+                <div class="form-group">
+                    <label for="number" id="number-label">Your Pets Age:</label>
+                    <input id="number" name="pet-age" type="number" min="0" max="30" class="form-control" placeholder="Age" required/>
+                </div>
 
-                <fieldset>
-                    <label for="dropdown">
-                        Are you a cat person or a dog person? <br />
-                        <select id="dropdown" name="cat-or-dog" >
-                            <option value="" >Select an option</option>
-                            <option value="1" >Cat Person</option>
-                            <option value="2" >Dog Person</option>
-                            <option value="3" >Other</option>
-                        </select>
-                    </label>
-                </fieldset>
+                <div class="form-group">
+                    <p>Are you a cat person or a dog person?</p>
+                    <select id="dropdown" name="cat-or-dog" class="form-control" required>
+                        <option disabled select value selected>Select an option</option>
+                        <option value="1" >Cat Person</option>
+                        <option value="2" >Dog Person</option>
+                        <option value="3" >Other</option>
+                    </select>
+                </div>
 
-                <fieldset>
-                    Would you recommend us to a friend? <br />
+                <div class="form-group">
+                    <p>Would you recommend us to a friend?</p> 
                     <label for="recomended" >
-                        <input id="recomended" type="radio" name="recommendation" class="inline" value="Yes" /> Yes <br />
+                        <input id="recomended" type="radio" name="recommendation" class="input-radio" value="Yes" checked/> Yes
                     </label>
                     <label for="notrecomended" >
-                        <input id="notrecomended" type="radio" name="recommendation" class="inline" value="No" /> No
+                        <input id="notrecomended" type="radio" name="recommendation" class="input-radio" value="No" /> No
                     </label>
-                </fieldset>
+                </div>
 
-                <fieldset>
-                    
-                    <p id="question">What is the personality of your pet?</p> <br >
-                    <input id="pet-personality" type="checkbox" name="funny" class="inline" value="Funny" />Funny <br />
-                    <input id="pet-personality" type="checkbox" name="crazy" class="inline" value="Crazy" />Crazy <br />
-                    <input id="pet-personality" type="checkbox" name="lovely" class="inline" value="Lovely" />Lovely <br />
-                    <input id="pet-personality" type="checkbox" name="devil" class="inline" value="Devil" />Devil <br />
-                    <input id="pet-personality" type="checkbox" name="cute" class="inline" value="Cute" />Cute <br />
-                    <input id="pet-personality" type="checkbox" name="chill" class="inline" value="Chill" />Chill <br />
-                    <input id="pet-personality" type="checkbox" name="agressive" class="inline" value="Agressive" />Agressive
-                </fieldset>
+                <div class="form-group">
+                    <p id="question">
+                        What is the personality of your pet? <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Funny" />
+                         Funny
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Crazy" />
+                         Crazy
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Lovely" />
+                         Lovely
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Devil" />
+                         Devil
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Cute" />
+                         Cute
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Chill" />
+                         Chill 
+                    </label>
+                    <label>
+                        <input id="pet-personality" type="checkbox" name="personality" class="input-checkbox" value="Agressive" />
+                         Agressive
+                    </label>
+                </div>
                 
-                <fieldset>
-                    <label for="comment">
-                        Please comment us: <br />
-                        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Comment here!" ></textarea>
-                    </label>
-                </fieldset>
+                <div class="form-group">
+                    <p>Please comment us:</p>
+                    <textarea id="comments" class="input-textarea" name="comment" rows="3" cols="30" placeholder="Comment here!" ></textarea>
+                </div>
 
-                <input id="submit" type="submit" value="Submit" />
+                <div class="form-submit">
+                    <button id="submit" type="submit" class="submit-button" value="Submit"> Submit </button>
+                </div>
+                
             </form>
         </div>
     </body>
